@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/magicaldb
+    username: root
+    password: Elvans0309
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+api:
+  endpoint:
+    base-url: /api/v1
+
+
+
