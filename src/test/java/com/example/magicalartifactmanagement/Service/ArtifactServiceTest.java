@@ -108,7 +108,7 @@ class ArtifactServiceTest {
         // Then
         assertThat(thrown)
                 .isInstanceOf(ArtifactNotFoundException.class);
-//                .hasMessage("There is no available artifact in the wizard list!"); //get the message from exception class
+ //                .hasMessage("There is no available artifact in the wizard list!"); //get the message from exception class
         verify(artifactRepository, times(1)).findById(1101);
 
     }

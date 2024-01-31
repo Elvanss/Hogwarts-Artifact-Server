@@ -19,7 +19,7 @@ import java.util.List;
 public class Wizard implements Serializable {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "id", unique = true)
     private Integer id;
 
     @Column(name = "name")

@@ -36,6 +36,9 @@ public class ArtifactService {
 
     public Artifact addArtifact(Artifact artifact) {
         artifact.setId(idWorker.nextId());
+        artifact.setName(artifact.getName());
+        artifact.setDescription(artifact.getDescription());
+        artifact.setImageUrl(artifact.getImageUrl());
         return artifactRepository.save(artifact);
     }
 
